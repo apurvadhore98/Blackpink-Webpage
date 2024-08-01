@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding-top: 80px; /* Adjust based on the header height */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color:#f4c2c2 ;
+}
+header .navbar a {
+    margin: 0 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navbar a:hover {
+    color: #f28a30;
+}
+section {
+    padding: 50px 100px;
+}
+/* Home Style */
+.home {
+    height: 100vh;
+    background: url('Image/background\ 2.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 7% 0;
+}
+
+
+/* About Style */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0f0f0f;
+    color: #fff;
+}
+
+.about img {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.about-text {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    background-color: #f4c2c2;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+   
+}
+
+.about-text .btn:hover {
+    background-color: #e99494;
+}
+/* Members Style */
+#members {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#0f0f0f;
+}
+
+#members h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.member-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.member-card {
+    background: #fff;
+    border: 1px solid #0c0c0c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member-card h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.member-card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.social-media a:hover {
+    color: #f28a30;
+}
+/* Music Styles */
+#music {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5a8bc;
+  
+}
+
+#music h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.music .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 6%;
+    margin-right: 6%;
+    gap: 20px;
+}
+
+.song-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(237, 226, 226, 0.1);
+    overflow: hidden;
+    width: 25%;
+    text-align: center;
+}
+.song-card img {
+    width: 100%;
+    border-bottom: 3px solid #131313;
+}
+
+.song-info {
+    padding: 10px;
+}
+
+.song-info h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.song-info p {
+    font-size: 16px;
+    margin: 5px 0 20px;
+}
+
+.song-info audio {
+    width: 100%;
+}
+.more-song-container  {
+    margin-top: 20px;
+}
+
+.more-song-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0e0e0e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* Tour Styles */
+.tour {
+    position: relative;
+    background-color:#000000 ;
+    color: #fff;
+    text-align: center;
+}
+
+.tour-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 13%;
+    
+}
+
+.tour-content .btn {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    color:black;
+    text-decoration: none;
+    border-radius: 10px;
+   
+}
+.tour-content .btn:hover {
+    background: #e67616;
+}
+/* Videos Styles */
+#videos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5a8bc;
+    
+}
+
+#videos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.videos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Center align content */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 auto; /* Center align slides */
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer; /* Add pointer cursor for better UX */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav label {
+    cursor: pointer;
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.nav label:hover {
+    background-color: #888;
+}
+
+.view-all-container {
+    margin-top: 20px;
+}
+
+.view-all-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d5ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: #0056b3;
+}
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+/* Subscribe Styles */
+.subscribe {
+    text-align: center;
+ 
+}
+
+.subscribe h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscription-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4c2c2;
+    color: #000;
+    margin-left: 10px;
+}
+
+.subscription-container button:hover {
+    background-color: #87d7e0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.official-social-media {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.official-social-media a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.official-social-media a:hover {
+    color: #f4c2c2;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar a {
+        margin: 10px 0;
+    }
+
+    .home {
+        padding: 50px 5%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .member-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .music .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    .about-text h1,
+    .about-text p,
+    .member-card h2,
+    .member-card p,
+    .song-info h3,
+    .song-info p {
+        font-size: 14px;
+    }
+
+    .song-card {
+        max-width: 100%;
+    }
+}
